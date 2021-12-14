@@ -1,0 +1,19 @@
+{
+    "name": "Roblox Stauts Dark Mode",
+    "description": "well",
+    "version": "1.0",
+    "manifest_version": 3,
+
+    "content_scripts": [
+        {
+            "matches": ["http://status.roblox.com/", "https://status.roblox.com/"],
+            "js": ["main.js"],
+            "css": ["style.css"]
+        }
+    ],
+
+    "web_accessible_resources": [{ 
+        "resources": ["robloxWhite.png"],
+        "matches": ["<all_urls>"]
+      }]
+}
